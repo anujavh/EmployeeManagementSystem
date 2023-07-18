@@ -144,7 +144,7 @@ namespace EmployeeManagementSystem.Services
 
         private bool EmployeeModelExists(int employeeId)
         {
-            return (_dataContext.EmployeeModels?.Any(e => e.DepartmentId == employeeId)).GetValueOrDefault();
+            return (_dataContext.EmployeeModels?.Any(e => e.EmpId == employeeId)).GetValueOrDefault();
         }
 
         private bool DepartmentModelExists(int id)
